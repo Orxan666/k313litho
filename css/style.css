@@ -1,0 +1,111 @@
+.header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+.header .fil .logo {
+  width: 10%;
+}
+
+.header .fil .logo img {
+  width: 100%;
+}
+
+.header .fil .text-menu ul li.blog {
+  position: relative;
+}
+
+.header .fil .text-menu ul li.blog:hover .drop-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .fil .text-menu ul li.blog .drop-menu {
+  background-color: white;
+  width: 200px;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.header .fil .text-menu ul li.blog .drop-menu ul li a {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  color: black;
+}
+
+.header .fil .text-menu ul li.blog .drop-menu ul li a:hover {
+  color: #fff;
+  background-color: orangered;
+}
+
+.header .fil .text-menu ul li.blog .drop-menu ul li a:hover::after {
+  width: 0;
+}
+
+.header .fil .text-menu ul li.home a::after {
+  width: 100%;
+}
+
+.header .fil .text-menu ul li.hire a {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  padding: 8px 25px;
+  background-color: orangered;
+  border-radius: 50px;
+}
+
+.header .fil .text-menu ul li.hire a:hover {
+  background-color: #fff;
+  color: orangered;
+}
+
+.header .fil .text-menu ul li.hire a:hover i {
+  background-color: orangered;
+  color: #fff;
+}
+
+.header .fil .text-menu ul li.hire a:hover::after {
+  width: 0;
+}
+
+.header .fil .text-menu ul li.hire a i {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: orangered;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.header .fil .text-menu ul li a {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.header .fil .text-menu ul li a:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+.header .fil .text-menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  height: 5px;
+  width: 0%;
+  background-color: red;
+  right: 0%;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+/*# sourceMappingURL=style.css.map */

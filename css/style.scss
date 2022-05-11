@@ -1,0 +1,115 @@
+.header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    .fil {
+        .logo {
+            width: 10%;
+
+            img {
+                width: 100%;
+            }
+        }
+        .text-menu {
+            ul {
+                li {
+                    &.blog {
+                        position: relative;
+                        &:hover {
+                            .drop-menu {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        .drop-menu {
+                            background-color: white;
+                            width: 200px;
+                            top: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            position: absolute;
+                            ul {
+                                li {
+                                    a {
+                                        transition: 0.3s ease-in;
+                                        color: black;
+                                        &:hover {
+                                            color: #fff;
+                                            background-color: orangered;
+                                            &::after {
+                                                width: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.home {
+                        a {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &.hire {
+                        a {
+                            transition: 0.4s ease-in;
+
+                            &:hover {
+                                background-color: #fff;
+                                color: orangered;
+                                i {
+                                    background-color: orangered;
+                                    color: #fff;
+                                }
+                                &::after {
+                                    width: 0;
+                                }
+                            }
+                            padding: 8px 25px;
+                            background-color: orangered;
+                            border-radius: 50px;
+                            i {
+                                background-color: white;
+                                padding: 10px 10px;
+                                border-radius: 50%;
+                                color: orangered;
+                                transition: 0.4s ease-in;
+                            }
+                        }
+                    }
+                    a {
+                        padding: 20px;
+                        display: block;
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        position: relative;
+
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                                left: 0%;
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            transition: 0.3s ease-in-out;
+                            height: 5px;
+                            width: 0%;
+                            background-color: red;
+                            right: 0%;
+                            transform-origin: 0 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// -------------------
